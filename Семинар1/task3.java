@@ -24,7 +24,10 @@ public class task3 {
         int result = 0;
         
         if (c == '/'){
-            result = a / b;
+            if (a == 0){
+                System.out.println("На ноль делить нельзя");
+                System.exit(a);
+            } else result = a / b;
         } else if (c == '*'){
             result = a * b;
         } else if (c == '+'){

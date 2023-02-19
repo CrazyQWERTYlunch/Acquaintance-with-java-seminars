@@ -10,7 +10,7 @@ public class task2 {
 
         for(int i = 5; i <= n; i += 2){
             int x = (i/2)+2;
-            for(int j = 3 ; j <= x; j +=2 ){
+            for(int j = 3 ; j <= x; j += 2){
                 if (j >= x-2) {
                     System.out.print(i + " ");
                     break;
