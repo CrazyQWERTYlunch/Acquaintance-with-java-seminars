@@ -31,13 +31,11 @@ public class Task3 {
                 System.out.print(save.getFirst()+"\n");
             }
                     
-            
             System.out.print("Введите второе число: ");
             int secNum = input.nextInt();
             
             System.out.print("Введите действие, которое хотите произвести с числами: ");
             char symbol = input.next().charAt(0);
-            
             
             String textLog = String.format("Введено новое выражение [%s %s %s], ",save.getFirst(),symbol,secNum);
             log(textLog);
@@ -49,11 +47,8 @@ public class Task3 {
         }    
         while(!"end".equals(flag));
         
-        
         input.close();
-
     }    
-
 
 
     public static int Calculate(int a, int b, char c) {
@@ -81,8 +76,6 @@ public class Task3 {
         
         return result;
     }
-
-
 
 
     public static LinkedList<Integer> checkCansel(LinkedList<Integer> save, String flag){
